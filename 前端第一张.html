@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	 <link href="css/cssReset.css" rel="stylesheet" type="text/css" />
+    <link href="css/header.css" rel="stylesheet" type="text/css" />
+    <link href="css/leftPage.css" rel="stylesheet" type="text/css" />
+    <link href="css/rightPage.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/liquid-slider.css">
+    <script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script src="js/jquery.liquid-slider.min.js"></script>
+    <script>
+        $(function(){
+            $('#slider-id').liquidSlider();
+        });
+    </script>
+
+</head>
+<style>
+	
+
+	.clearfix:after {display: block;clear:both;}
+	body, div, dl, dt, dd, ul, ol, li, form, p
+	{
+    	padding: 0;
+    	margin: 0;
+    }
+	body{
+		width: 1280px;
+		height:1252px;
+    }
+
+	.header{
+		width: 1280px;
+		height: 55px;
+		background: #2189C0;
+		margin: 0 auto;
+		display: block;
+
+	}
+
+	.logo{
+		 float: left;
+   		 padding: 10px 0 0 50px;
+   		 margin: 0 auto;
+	}
+
+	.searcher{
+		float: right;
+    	padding-top: 14px;
+    	width: 497px;
+    	height: 42px;
+	}
+
+	.search{
+		width: 273px;
+    	height: 28px;
+    	border-radius: 14px;
+		float: left;
+		margin-top: 0px;
+		padding-left: 40px;
+    	background: #fff url(zoom.png) no-repeat 17px 6px;
+    	line-height: 28px;
+	}
+
+	.a{
+		width:22px;
+		height: 28px;
+		float: left;
+		margin-left: 20px;
+		background: #2B2E3D;
+		line-height: 28px;
+		background: url(login.png) no-repeat 0 6px;
+	}
+
+	.b{
+		height: 28px;
+    	line-height: 28px;
+    	color: white;
+    	font-size: 12px;
+    	float: left;
+	}
+
+	a {
+    	font-family: "SimHei","Microsoft Yahei","Arial";
+    	text-decoration: none;
+    	color: #333;
+	}
+	
+	.containner{
+		width: 1280px;
+		height: 1197.67px;
+		margin: 0px auto;
+		background: rgb(42, 46, 61);
+	}
+	.bread{
+		height: 30px;
+    	width: 997px;
+    	line-height: 30px;
+    	padding-left: 23px;
+   		background: rgb(255, 255, 255);
+    	margin: 0px;
+    	float: right;
+	}
+
+	a {
+    	font-family: SimHei, "Microsoft Yahei", Arial;
+    	text-decoration: none;
+    	font-size: 12px;
+	}
+	
+	.bread a {
+    	color: rgb(170, 170, 170);
+    	width: 24px;
+    	height: 12px;
+    	margin: 0px 7px;
+	}
+
+	.left{
+		width: 260px;
+		height: 582px;
+		float: left;
+		color: rgb(102, 102, 102);
+	}
+
+	.lefthead{
+		width: 260px;
+		height: 150px;
+		background: rgb(42, 46, 61);
+	}
+
+	.round{
+		width: 228px;
+		height: 56.67px;
+		padding-top: 18px;
+		padding-left: 32px;
+	}
+
+	.done{
+		float: left;
+		width: 56.33px;
+		height: 56.33px;
+    	margin-right: 18px;
+    	margin-left: 13px;
+    	width: 55px;
+    	height: 55px;
+    	text-align: center;
+   		font-size: 0px;
+    	line-height: 55px;
+    	border-width: 1px;
+    	border-style: solid;
+    	border-color: rgb(232, 231, 231);
+    	border-image: initial;
+    	border-radius: 50%;
+	}
+
+	.done span{
+		width: 47px;
+    	height: 47px;
+    	display: inline-block;
+    	vertical-align: middle;
+   	 	border-radius: 50%;
+    	background: rgb(185, 186, 189);
+	}
+
+	.h{
+		float: left;
+		width: 48px;
+		height: 36.67px;
+		font-weight: normal;
+    	font-style: normal;
+    	padding-top: 20px;
+    	font-family: SimHei, "Microsoft Yahei", Arial;
+    	color: rgb(236, 235, 236);
+    	font-size: 16px;
+	}
+
+	.trouble{
+		width: 228px;
+		height: 28px;
+		margin-top: 24px;
+		float: right;
+	}
+
+	ul{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		height: 0;
+	}
+
+	.trouble li{
+		width: 85px;
+    	text-align: center;
+    	float: left;
+    	color: rgb(103, 119, 139);
+    	height: 28px;
+    	line-height: 14px;
+    	font-size: 12px;
+    	font-family: SimSun;
+	}
+
+	.trouble li.li1{
+		border-right: 2px solid rgb(103, 119, 139);
+	}
+
+	.trouble span{
+		    font-size: 14px;
+    		font-family: SimHei;
+    		width: 85px;
+    		height: 14px;
+    		display: block;
+	}
+
+
+	ul.list {
+    	list-style: none;
+    	display: block;
+    	width: 260px;
+    	height: 432px;
+    	padding: 0;
+    	margin:0;
+    	font-family: SimHei, "Microsoft Yahei", Arial;
+    	background: rgb(42, 46, 61);
+	}
+
+	li.fuck{
+		height: 192px;
+		line-height: 20px;
+    	background: rgb(56, 61, 78);
+    	padding-left: 45px; 
+	}
+
+	.list li a{
+		color: rgb(237, 237, 240);
+		display: inline-block;
+    	height: 20px;
+    	line-height: 20px;
+    	font-size: 12px;
+    	width: 73px;
+	}
+
+	.list i.zz{
+		margin-right: 13px;
+		float: left;
+    	width: 12px;
+	    height: 12px;
+	    position: relative;
+    	top: 4px;
+    	background: url(file_open.png) center center no-repeat;
+	}
+
+
+	.list ul{
+		padding-left: 25px;
+		list-style: none;
+		width: 215px;
+		height: 160px;
+		padding: 0;
+		margin: 0;
+	}
+
+	.bag li{
+		width: 190px;
+		height: 32px;
+		float: right;
+		line-height: 20px;
+
+	}
+
+
+	i.sb{
+		margin-right: 7px;
+		float: left;
+    	background: url(close_arrow.png) center center no-repeat;
+    	width: 12px;
+    	height: 12px;
+    	color: rgb(102, 102, 102);
+    	position: relative;
+    	top: 4px;
+	}
+
+	i.sb1{
+		float: left;
+    	width: 12px;
+    	height: 12px;
+    	margin-right: 4px;
+    	position: relative;
+    	top: 4px;
+    	background: url(file_close.png) center center no-repeat;
+	}
+
+	.bag li a{
+		color: rgb(110, 128, 150);
+	}
+
+	ul.center{
+		width: 190px;
+		height: 96px;
+		float: right;
+		margin-left: 0;
+	}
+
+	i.cb{
+		margin-right: 7px;
+		float: left;
+    	background: url(open_arrow.png) center center no-repeat;
+    	width: 12px;
+    	height: 12px;
+    	color: rgb(102, 102, 102);
+    	position: relative;
+    	top: 4px;
+	}
+
+	i.cb1{
+		float: left;
+    	width: 12px;
+    	height: 12px;
+    	margin-right: 4px;
+    	position: relative;
+    	top: 4px;
+    	background: url(file_cur.png) center center no-repeat;
+	}
+
+	.center ul{
+		width: 190px;
+		height: 64px;
+
+	}
+
+	.center li{
+		width: 157px;
+		height: 32px;
+		padding: 0;
+		margin: 0;
+	}
+
+	.db a{
+		color: rgb(237, 237, 240);
+	}
+
+	i.hh{
+		float: left;
+		width: 12px;
+		height: 12px;
+		position: relative;
+    	top: 4px;
+    	margin-right: 4px;
+    	background: url(doc_open.png)  center center no-repeat;
+    	color: rgb(237, 237, 240);
+	}
+
+	ul.last{
+		width: 	260px;
+		height: 240px;
+	}
+
+	.last li {
+		width: 	215px;
+		height: 36px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		padding-left: 45px;
+		line-height: 36px;
+		font-size: 12px;
+    	font-family: "SimHei","Microsoft Yahei","Arial";
+	}
+
+	.last li a{
+		width: 73px;
+		height: 20px;
+		color: #6e8096;
+    	font-size: 12px;
+	}
+	
+	i.star{
+		width: 12px;
+		height: 12px;
+		float: left;
+		margin-right: 13px;
+		position: relative;
+		top: 4px;
+		background: url(star.png) no-repeat center;
+	}
+
+	i.share{
+		width: 12px;
+		height: 12px;
+		float: left;
+		margin-right: 13px;
+		position: relative;
+		top: 4px;
+		background: url(share.png);
+	}
+
+	i.count{
+		width: 12px;
+		height: 12px;
+		float: left;
+		margin-right: 13px;
+		position: relative;
+		top: 4px;
+		background: url(user_info.png) no-repeat center;
+	}
+
+	.state{
+		width: 1020px;
+		height: 1147.67px;
+		float: right;
+		padding-top: 19px;
+		background: #eeeeed;
+	}
+
+	.instate{
+		width: 892px;
+		height: 1008.67px;
+		margin: 0 auto;
+	}
+	.priceall{
+		width: 892px;
+		height: 66.33px;
+		margin-bottom: 15px;
+	}
+	.price{
+		width: 759px;
+		height: 65px;
+	}
+	.botol{
+		float: left;
+		width: 29px;
+    	height: 65px;
+    	background: #fff;
+    	border: 1px solid #cacdd1;
+    	border-right-color: #ebecee;
+    	border-bottom-color: #ebecee;
+    	margin-right: 4px;
+	}
+
+	.botol span{
+		margin-left: 10px;
+		margin-top: 20px;
+		display: inline-block;
+		height: 12px;
+	}
+
+	.lbox{
+		width: 111px;
+    	height: 65px;
+    	background: #fff;
+    	text-align: center;
+    	float: left;
+    	margin-right: 4px;
+    	box-sizing: border-box;
+    	padding-top: 12px;
+		border-top: 4px solid rgb(67, 136, 201);
+		margin-right: 4px;
+    	border-right-color: 1px solid #cacdd1;
+    	border-bottom-color:1px solid #cacdd1;
+	}
+
+	.lbox span{
+		display: block;
+   	 	line-height: 12px;
+    	color: #323333;
+    	width: 109.67px;
+    	height: 12px;
+    	font-size: 12px;
+    	font-family: "SimHei","Microsoft Yahei","Arial";
+
+	}
+
+	.lbox strong{
+		display: block;
+    	line-height: 40px;
+    	color: #ec6602;
+    	font-size: 21px;
+    	height: 40px;
+	}
+	.pricelist li b{
+    	font-size: 13px;
+    	color: #aeaeae;
+	}
+	.box{
+		width: 111px;
+    	height: 65px;
+    	background: #fff;
+    	text-align: center;
+    	float: left;
+    	margin-right: 4px;
+    	box-sizing: border-box;
+    	padding-top: 12px;
+		margin-right: 4px;
+    	border-right-color: 1px solid #cacdd1;
+    	border-bottom-color:1px solid #cacdd1;
+	}
+
+	.box span{
+		display: block;
+   	 	line-height: 12px;
+    	color: #323333;
+    	width: 109.67px;
+    	height: 12px;
+    	font-size: 12px;
+    	font-family: "SimHei","Microsoft Yahei","Arial";
+
+	}
+
+	.box strong{
+		display: block;
+    	line-height: 40px;
+    	color: #ec6602;
+    	font-size: 21px;
+    	height: 40px;
+	}
+	
+	.botor{
+		float: left;
+		width: 29px;
+    	height: 65px;
+    	background: #fff;
+    	border: 1px solid #cacdd1;
+    	border-right-color: #ebecee;
+    	border-bottom-color: #ebecee;
+	}
+
+	.botor span{
+		margin-left: 10px;
+		margin-top: 20px;
+		display: inline-block;
+		height: 12px;
+	}
+
+	.history{
+		float: right;
+		width: 130px;
+		height: 66px;
+	}
+
+	.history a{
+		width: 69px;
+		height: 65px;
+		background: #fff url(history.png) no-repeat 18px 17px;
+    	line-height: 65px;
+    	padding-left: 60px;
+    	display: block;
+   		color: #535353;
+
+	}
+
+	.picture{
+		width: 892px;
+		height: 70.33px;
+		margin-top: 40px;
+	}
+
+	.picture li{
+		float: left;
+    	height: 57px;
+   	 	background: #fff;
+    	border: 1px solid #d8d9db;
+    	width: 188px;
+    	margin-right: 29px;
+    	border-left: 4px solid;
+    	position: relative;
+    	padding: 12px 0 0 8px;
+    	line-height: 24px;
+   	 	color: #323333;
+   	 	font-size: 12px;
+    	font-family: "SimHei","Microsoft Yahei","Arial";
+	}
+	
+	.picture li:nth-child(1) {
+    	border-left-color: #43b29d;
+	}
+
+	.picture li:nth-child(2) {
+    	border-left-color: #388ac1;
+	}
+
+	.picture li:nth-child(3) {
+    	border-left-color: #d04b36;
+	}
+
+	.picture li:nth-child(4) {
+    	margin: 0;
+    	border-left-color: #e2cd46;
+	}
+
+	.picture li span {
+    	color: #aaa;
+	}
+
+	.picture p{
+		width: 188px;
+		height: 24px;
+		display: block;
+		margin: 0;
+	}
+
+	.color1{
+    	position: absolute;
+    	width: 60px;
+    	height: 47px;
+    	top: 12px;
+    	right: 15px;
+    	background: #43b29d;
+	}
+	.color2{
+    	position: absolute;
+    	width: 60px;
+    	height: 47px;
+    	top: 12px;
+    	right: 15px;
+    	background: #388ac1;
+	}
+
+	.color3{
+    	position: absolute;
+    	width: 60px;
+    	height: 47px;
+    	top: 12px;
+    	right: 15px;
+    	background: #d04b36;
+	}
+
+	.color4{
+    	position: absolute;
+    	width: 60px;
+    	height: 47px;
+    	top: 12px;
+    	right: 15px;
+    	background: #e2cd46;
+    	margin: 0;
+	}
+
+	.que{
+		height: 70px;
+    	padding-top: 15px;
+    	padding-left: 29px;
+    	margin-bottom: 9px;
+    	border-width: 1px;
+    	border-style: solid;
+    	border-color: rgb(221, 223, 225);
+    	border-image: initial;
+    	background: rgb(255, 255, 255);
+    	border-radius: 2px;	
+	}
+
+	.project{
+		height: 70px;
+		width: 121px;
+		margin-right: 29px;
+		float: left;
+	}
+
+	.project a{
+		width: 71px;
+		background: url(blue_arrow.png) 90% 9px no-repeat;
+		height: 24px;
+    	line-height: 22px;
+    	margin-bottom: 5px;
+    	position: relative;
+    	color: rgb(50, 51, 51);
+    	font-family: SimHei;
+    	border-width: 1px;
+    	border-style: solid;
+    	border-color: rgb(202, 203, 203);
+
+	}
+
+	.project span{
+		color: rgb(170, 170, 170);
+    	line-height: 26px;
+    	margin-bottom: 5px;
+    	padding: 0px 9px 0px 0px;
+    	font-size: 12px;
+    	font-family: SimHei, "Microsoft Yahei", Arial;
+    	float: left;
+
+	}
+
+	.people{
+	    height: 70px;
+	    float: left;
+	    width: 190px;
+    	margin-right: 32px; 	
+	}
+
+	.time{
+		float: left;
+		width: 298px;
+    	margin-right: 30px;
+    	height: 70px;
+	}
+
+	.find{
+		float: left;
+    	width: 50px;
+    	height: 26px;
+    	color: rgb(255, 255, 255);
+    	line-height: 26px;
+    	margin-top: 16px;
+    	border-radius: 2px;
+    	font-weight: 12px;
+    	background: rgb(56, 138, 193);
+    	font-family: SimHei, "Microsoft Yahei", Arial;
+    	text-align: center;
+	}
+	
+</style>
+<body>
+	<div class="header">
+		<div class="logo">
+			<img src="logo.png">
+		</div>
+		<div class="searcher">
+			<div class="search"></div>
+			<div class="a"></div>
+			<div class="b">登录</div>
+		</div>
+	</div>
+	<div class="containner">
+		<div class="left">
+			<div class="lefthead">
+				<div class="round">
+					<div class="done">
+						<span></span>
+					</div>
+					<div class="h">ABC123</div>
+				</div>
+				<div class="trouble">
+					<ul>
+						<li class="li1">
+							<span>110</span>
+							<span>收藏</span>
+						</li>
+						<li>
+							<span>330</span>
+							<span>粉丝</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<ul class="list">
+				<li class="fuck">
+					<a href="javascript:;">
+					<i class="zz"></i>
+					个人报表</a>
+					<ul class="bag">
+					<li>
+						<a href="javascript:;">
+						<i class="sb"></i>
+						<i class="sb1"></i>文件一</a>
+					</li>
+						<ul class="center">
+							<a href="javascript:;"><i class="cb"></i>
+							<i class="cb1"></i>文件二</a>
+								<ul>
+									<li class="db">
+										<a href="javscript:;">
+										<i class="hh"></i>文档1</a>
+									</li>
+									<li>
+										<a href="javscript:;">
+										<i class="hh"></i>文档1</a>
+									</li>
+								</ul>
+
+						</ul>
+					<li>
+						<a href="javascript:;">
+						<i class="sb"></i>
+						<i class="sb1"></i>文件三
+						</a>
+					</li>
+					</ul>
+				</li>
+				<ul class="last">
+					<li><a href="javascript:;">
+						<i class="star"></i>个人收藏</a>
+					</li>
+					<li>
+					<a href="javascript:;">
+						<i class="share"></i>我的分享</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+						<i class="star"></i>图库</a>
+					</li>
+						<li>
+							<a href="javascript:;">
+							<i class="star"></i>成长经录</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+						    <i class="count"></i>账户信息</a>
+						</li>
+				</ul>
+			</ul>
+          
+		</div>
+		<div class="bread">
+			<a href="#">C站 </a>
+			/
+			<a href="#">个人报表</a>
+			/
+			<a href="#">文件一</a>
+			/
+			<a class="cur" href="#">文档一</a>
+		</div>
+		<div class="state">
+			<div class="instate">
+				<div class="que">
+					<div class="project">
+						<span class="fl">查询项</span>
+						<a href="javascript:;">第一项
+							<i class="blue"></i>
+						</a>
+					</div>
+					<div class="people"></div>
+					<div class="time"></div>
+					<div class="find">搜索</div>
+				</div>
+				<div class="priceall">
+				<div class="history">
+					<a href="#">历史查询</a>
+				</div>
+					<div class="price">
+						<div class="botol">
+							<span><</span>
+						</div>
+						<div class="pricelist">
+							<ul>
+								<li class="lbox">
+									<span>10:00am</span>
+									<strong><b>¥</b>1200</strong>
+								</li>
+								<li class="box">
+									<span>11:00am</span>
+									<strong><b>¥</b>1300</strong>
+								</li>
+								<li class="box">
+									<span>12:00am</span>
+									<strong><b>¥</b>1200</strong>
+								</li>
+								<li class="box">
+									<span>01:00pm</span>
+									<strong><b>¥</b>1400</strong>
+								</li>
+								<li class="box">
+									<span>02:00am</span>
+									<strong><b>¥</b>1500</strong>
+								</li>
+								<li class="box">
+									<span>03:00pm</span>
+									<strong><b>¥</b>1800</strong>
+								</li>
+							</ul>
+						</div>
+						<div class="botor">
+							<span>></span>
+						</div>
+					</div>
+				</div>
+				<div class="picture">
+					<ul>
+						<li>
+							<p>133311</p>
+							<span>成交量</span>
+							<ul class="color1"></ul>							
+						</li>
+						<li>
+							<p>133311</p>
+							<span>成交量</span>
+							<ul class="color2"></ul>
+						</li>
+						<li>
+							<p>133311</p>
+							<span>成交量</span>
+							<ul class="color3"></ul>
+						</li>
+						<li>
+							<p>133311</p>
+							<span>成交量</span>
+							<ul class="color4"></ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
